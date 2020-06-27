@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
                           child: ButtonBar(
                           children: <Widget>[
                             RaisedButton(
-                              color: Hexcolor('#ED4C5C'),
+                              color: Hexcolor('#FF864C'),
                               onPressed: (){
                                 call(number);
                               },
