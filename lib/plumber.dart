@@ -36,7 +36,8 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                 ),
                 Card(
                   color: Hexcolor('#800080'),
-                        margin: EdgeInsets.zero,
+                        elevation: 0,
+                        margin: EdgeInsets.all(5),
                         child: ListTile(
                           leading: Image.asset('images/menprofile.png'),
                           title: Text('Jeremy ',
@@ -63,7 +64,8 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                 ),
                    Card(
                   color: Hexcolor('#800080'),
-                        margin: EdgeInsets.zero,
+                        elevation: 0,
+                        margin: EdgeInsets.all(5),
                         child: ListTile(
                           leading: Image.asset('images/womenprofile.png'),
                           title: Text('Allison ',
@@ -90,7 +92,8 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                 ),
                    Card(
                   color: Hexcolor('#800080'),
-                        margin: EdgeInsets.zero,
+                        elevation: 0,
+                        margin: EdgeInsets.all(5),
                         child: ListTile(
                           leading: Image.asset('images/menprofile.png'),
                           title: Text('Clyde',
@@ -117,7 +120,8 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                 ),
                    Card(
                   color: Hexcolor('#800080'),
-                        margin: EdgeInsets.zero,
+                        elevation: 0,
+                        margin: EdgeInsets.all(5),
                         child: ListTile(
                           leading: Image.asset('images/menprofile.png'),
                           title: Text('Tim',
@@ -144,7 +148,8 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                 ),
                    Card(
                   color: Hexcolor('#800080'),
-                        margin: EdgeInsets.zero,
+                        elevation: 0,
+                        margin: EdgeInsets.all(5),
                         child: ListTile(
                           leading: Image.asset('images/menprofile.png'),
                           title: Text('Sandro',
@@ -171,7 +176,8 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                 ),
                    Card(
                   color: Hexcolor('#800080'),
-                        margin: EdgeInsets.zero,
+                       elevation: 0,
+                        margin: EdgeInsets.all(5),
                         child: ListTile(
                           leading: Image.asset('images/womenprofile.png'),
                           title: Text('Rita',
@@ -198,7 +204,8 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                 ),
                    Card(
                   color: Hexcolor('#800080'),
-                        margin: EdgeInsets.zero,
+                        elevation: 0,
+                        margin: EdgeInsets.all(5),
                         child: ListTile(
                           leading: Image.asset('images/womenprofile.png'),
                           title: Text('Carly',
@@ -212,7 +219,7 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                           ),
                           trailing: CircleAvatar(
                           radius: 30.0,
-                          backgroundColor: Hexcolor('#ED4C5C'),
+                          backgroundColor: Hexcolor('#C21170'),
                           child: IconButton(icon: Icon(Icons.phone,
                             color: Colors.white,
                             ),
@@ -225,7 +232,8 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                 ),
                    Card(
                   color: Hexcolor('#800080'),
-                        margin: EdgeInsets.zero,
+                  elevation: 0,
+                        margin: EdgeInsets.all(5),
                         child: ListTile(
                           leading: Image.asset('images/menprofile.png'),
                           title: Text('Ren',
