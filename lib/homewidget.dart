@@ -32,13 +32,14 @@ class _HomePageState extends State<HomePage> {
             style: TextStyle(color: Colors.white,fontFamily:'Poppins' ),
             ),
          ),
-          BottomNavigationBarItem(
+         BottomNavigationBarItem(
            icon: new Icon(Icons.invert_colors,
            color: Colors.white),
            title: new Text('Water',
             style: TextStyle(color: Colors.white,fontFamily:'Poppins'),
             ),
          ),
+          
          BottomNavigationBarItem(
            icon: new Icon(Icons.settings,
            color: Colors.white),

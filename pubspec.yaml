@@ -47,6 +47,9 @@ flutter:
     - images/tree.png
     - images/donate.png
     - images/developer.png
+    - images/plumber.png
+    - images/menprofile.png
+    - images/womenprofile.png
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

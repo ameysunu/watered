@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'plumber.dart';
 class Home extends StatelessWidget {
   final int number = 03443462020;
    void call(int number) => launch("tel:$number");
@@ -81,7 +82,9 @@ class Home extends StatelessWidget {
                           style: TextStyle(color: Colors.white, fontFamily: 'Poppins', fontSize: 20.0
                           ),
                           ),
-                          onTap: null, 
+                          onTap: () => Navigator.push(
+                            context, MaterialPageRoute(builder: (context)=> PlumberDetails()),
+                          ), 
                           subtitle: Text('Get in touch with a plumber.',
                           style: TextStyle(color: Colors.white70, fontFamily: 'Poppins', fontSize:15.0
                           ),
