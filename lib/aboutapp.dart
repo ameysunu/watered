@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class About extends StatelessWidget {
   @override
@@ -81,7 +82,12 @@ class About extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
                   RawMaterialButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      if (await canLaunch(
+                          "https://github.com/ameysunu/watered.git")) {
+                        await launch("https://github.com/ameysunu/watered.git");
+                      }
+                    },
                     elevation: 3.0,
                     fillColor: Hexcolor('#ED4C5C'),
                     child: Center(
