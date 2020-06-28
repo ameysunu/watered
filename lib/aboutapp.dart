@@ -103,7 +103,7 @@ class About extends StatelessWidget {
                 ],
               ),
               Container(
-                height: 220.0,
+                height: 200.0,
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(

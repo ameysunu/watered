@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'plumber.dart';
+import 'earth.dart';
 
 class Home extends StatelessWidget {
   final int number = 03443462020;
@@ -131,13 +132,10 @@ class Home extends StatelessWidget {
                                   fontFamily: 'Poppins',
                                   fontSize: 20.0),
                             ),
-                            onTap: () async {
-                              if (await canLaunch(
-                                  "https://saveourwater.com/save-our-water-and-our-trees/")) {
-                                await launch(
-                                    "https://saveourwater.com/save-our-water-and-our-trees/");
-                              }
-                            },
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Earth()),
+                            ),
                             subtitle: Text(
                               'Learn how you can save water and trees.',
                               style: TextStyle(
