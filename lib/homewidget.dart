@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'home.dart';
 import 'water.dart';
+import 'aboutapp.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -15,8 +16,7 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _widgetOptions = [
     Home(),
     Water(),
-    // NewsApp(),
-    // AboutUs(),
+    About(),
   ];
 
   Widget build(BuildContext context) {
@@ -42,9 +42,9 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             BottomNavigationBarItem(
-              icon: new Icon(Icons.settings, color: Colors.white),
+              icon: new Icon(Icons.info_outline, color: Colors.white),
               title: new Text(
-                'Settings',
+                'About App',
                 style: TextStyle(color: Colors.white, fontFamily: 'Poppins'),
               ),
             ),
