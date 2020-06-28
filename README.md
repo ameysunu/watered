@@ -1,6 +1,6 @@
-# flutter_hack
+# Watered
 
-A new Flutter project.
+Monitor all your taps, geysers and sink for water usage and to detect any sorts of leakage. Find the nearest plumber and availabilty to make an appointment to check over your leakages. Also, support water and wildlife.
 
 ## Getting Started
 
