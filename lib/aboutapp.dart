@@ -5,14 +5,14 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Hexcolor('#800080'),
+      backgroundColor: Hexcolor('#FF864C'),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
             children: <Widget>[
               Card(
                 elevation: 0,
-                color: Hexcolor('#800080'),
+                color: Hexcolor('#FF864C'),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.vertical(
                     top: Radius.circular(25.0),
@@ -28,7 +28,7 @@ class About extends StatelessWidget {
                         width: double.infinity,
                         child: Text(
                           'About App',
-                          textAlign: TextAlign.center,
+                          textAlign: TextAlign.left,
                           style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 30.0,
@@ -40,7 +40,7 @@ class About extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Hexcolor('#ED4C5C'),
+                color: Hexcolor('#800080'),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.vertical(
                     top: Radius.circular(25.0),
@@ -73,8 +73,40 @@ class About extends StatelessWidget {
                             fontSize: 15.0,
                             color: Colors.white),
                       ),
-                    )
+                    ),
                   ],
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  RawMaterialButton(
+                    onPressed: () {},
+                    elevation: 3.0,
+                    fillColor: Hexcolor('#ED4C5C'),
+                    child: Center(
+                      child: Icon(
+                        Icons.share,
+                        color: Colors.white,
+                        size: 35.0,
+                      ),
+                    ),
+                    padding: EdgeInsets.all(15.0),
+                    shape: CircleBorder(),
+                  ),
+                ],
+              ),
+              Container(
+                height: 220.0,
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Text(
+                    'Made with ❤️ by Amey Sunu',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                        color: Colors.white),
+                  ),
                 ),
               ),
             ],
