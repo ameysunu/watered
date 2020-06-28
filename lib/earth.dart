@@ -214,17 +214,6 @@ class Earth extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(20, 0, 10, 5),
-                child: Text(
-                  'Do make your donations if possible towards nature protection and wildlife. ',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Poppins',
-                    fontSize: 15.0,
-                  ),
-                ),
-              ),
             ],
           ),
         ),
