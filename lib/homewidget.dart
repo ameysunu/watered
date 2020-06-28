@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
               icon: new Icon(Icons.info_outline, color: Colors.white),
               title: new Text(
-                'About App',
+                'About Us',
                 style: TextStyle(color: Colors.white, fontFamily: 'Poppins'),
               ),
             ),
