@@ -50,6 +50,12 @@ flutter:
     - images/plumber.png
     - images/menprofile.png
     - images/womenprofile.png
+    - images/tap1.png
+    - images/tap2.png
+    - images/shower.png
+    - images/toilet.png
+    - images/dish.png
+    - images/sink.png
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
