@@ -100,6 +100,7 @@ class About extends StatelessWidget {
                         size: 35.0,
                       ),
                     ),
+                    splashColor: Hexcolor('#800080'),
                     padding: EdgeInsets.all(15.0),
                     shape: CircleBorder(),
                   ),
