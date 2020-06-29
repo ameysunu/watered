@@ -34,6 +34,7 @@ dev_dependencies:
     sdk: flutter
   url_launcher: ^3.0.3
   hexcolor: ^1.0.4
+  share: ^0.6.4+3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
