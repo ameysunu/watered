@@ -17,8 +17,8 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _widgetOptions = [
     Home(),
     Water(),
-    About(),
     Bills(),
+    About(),
   ];
 
   Widget build(BuildContext context) {
@@ -44,16 +44,16 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             BottomNavigationBarItem(
-              icon: new Icon(Icons.info_outline, color: Colors.white),
+              icon: new Icon(Icons.featured_play_list, color: Colors.white),
               title: new Text(
-                'About Us',
+                'Bills',
                 style: TextStyle(color: Colors.white, fontFamily: 'Poppins'),
               ),
             ),
             BottomNavigationBarItem(
-              icon: new Icon(Icons.featured_play_list, color: Colors.white),
+              icon: new Icon(Icons.info_outline, color: Colors.white),
               title: new Text(
-                'Bills',
+                'About Us',
                 style: TextStyle(color: Colors.white, fontFamily: 'Poppins'),
               ),
             ),
