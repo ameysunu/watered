@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'donate.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'plumber.dart';
@@ -160,12 +161,10 @@ class Home extends StatelessWidget {
                                   fontFamily: 'Poppins',
                                   fontSize: 20.0),
                             ),
-                            onTap: () async {
-                              if (await canLaunch(
-                                  "https://generosity.org/donate/")) {
-                                await launch("https://generosity.org/donate/");
-                              }
-                            },
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Donate()),
+                            ),
                             subtitle: Text(
                               'Support water cause by donation.',
                               style: TextStyle(
