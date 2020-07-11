@@ -186,7 +186,7 @@ class _BillsState extends State<Bills> {
                 ),
               ),
               Card(
-                color: Hexcolor('#FF864C'),
+                color: Hexcolor('#C21170'),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.vertical(
                     top: Radius.circular(25.0),
@@ -208,7 +208,7 @@ class _BillsState extends State<Bills> {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 20,
-                              color: Hexcolor('#800080'),
+                              color: Hexcolor('#FFCB52'),
                             ),
                           ),
                         ),
@@ -241,7 +241,7 @@ class _BillsState extends State<Bills> {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 13,
-                              color: Hexcolor('#800080'),
+                              color: Hexcolor('#FFCB52'),
                             ),
                           ),
                         ),
@@ -251,7 +251,7 @@ class _BillsState extends State<Bills> {
                 ),
               ),
               Card(
-                color: Hexcolor('#FF864C'),
+                color: Hexcolor('#C21170'),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.vertical(
                     top: Radius.circular(25.0),
@@ -273,14 +273,14 @@ class _BillsState extends State<Bills> {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 20,
-                              color: Hexcolor('#800080'),
+                              color: Hexcolor('#FFCB52'),
                             ),
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(20, 0, 0, 10),
                           child: Text(
-                            'Payment Date: Payment date exceeded\nStatus: Unpaid ',
+                            'Payment Date: Exceeded\nStatus: Unpaid ',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 20,
@@ -306,7 +306,7 @@ class _BillsState extends State<Bills> {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 13,
-                              color: Hexcolor('#800080'),
+                              color: Hexcolor('#FFCB52'),
                             ),
                           ),
                         ),
