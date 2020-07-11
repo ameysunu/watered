@@ -85,7 +85,7 @@ class _BillsState extends State<Bills> {
                         Padding(
                           padding: const EdgeInsets.fromLTRB(20, 0, 0, 10),
                           child: Text(
-                            'Last Payment Date: 28/03/2020\nStatus: Paid ',
+                            'Payment Date: 28/03/2020\nStatus: Paid ',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 20,
@@ -94,13 +94,219 @@ class _BillsState extends State<Bills> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 10),
+                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 5),
                           child: Text(
                             'Total: \u0024 45.67',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 20,
                               color: Hexcolor('#FFFFFF'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20.0, 0, 0, 10),
+                          child: Text(
+                            'No savings!',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 13,
+                              color: Hexcolor('#800080'),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Hexcolor('#FF864C'),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(25.0),
+                    bottom: Radius.circular(25.0),
+                  ),
+                ),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 10, 0, 10),
+                          child: Text(
+                            'April 2020',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#800080'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 10),
+                          child: Text(
+                            'Payment Date: 30/04/2020\nStatus: Paid ',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#FFFFFF'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 5),
+                          child: Text(
+                            'Total: \u0024 40.32',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#FFFFFF'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20.0, 0, 0, 10),
+                          child: Text(
+                            'You saved \u0024 5.35 from last month',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 13,
+                              color: Hexcolor('#800080'),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Hexcolor('#FF864C'),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(25.0),
+                    bottom: Radius.circular(25.0),
+                  ),
+                ),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 10, 0, 10),
+                          child: Text(
+                            'May 2020',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#800080'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 10),
+                          child: Text(
+                            'Payment Date: 29/05/2020\nStatus: Paid ',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#FFFFFF'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 5),
+                          child: Text(
+                            'Total: \u0024 48.21',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#FFFFFF'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20.0, 0, 0, 10),
+                          child: Text(
+                            'You exceeded by \u0024 7.89 from last month',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 13,
+                              color: Hexcolor('#800080'),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Hexcolor('#FF864C'),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(25.0),
+                    bottom: Radius.circular(25.0),
+                  ),
+                ),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 10, 0, 10),
+                          child: Text(
+                            'June 2020',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#800080'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 10),
+                          child: Text(
+                            'Payment Date: Payment date exceeded\nStatus: Unpaid ',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#FFFFFF'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 5),
+                          child: Text(
+                            'Total: \u0024 39.56',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 20,
+                              color: Hexcolor('#FFFFFF'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20.0, 0, 0, 10),
+                          child: Text(
+                            'You saved \u0024 8.65 from last month',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 13,
+                              color: Hexcolor('#800080'),
                             ),
                           ),
                         ),
