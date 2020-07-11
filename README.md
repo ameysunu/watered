@@ -18,10 +18,11 @@ samples, guidance on mobile development, and a full API reference.
 ## v0.1
 
 1. New Bill Section added.
-2. Bug Fixes.
-2.1. Bottom Navigation Bar switching error fixed.
-2.2. Share function is now functioning, instead of opening link.
-2.3. Theme Data function resolved. Phone theme forcing app into dark mode via Scaffold now fixed.
+2.
+## Bug Fixes.
+1. Bottom Navigation Bar switching error fixed.
+2. Share function is now functioning, instead of opening link.
+3. Theme Data function resolved. Phone theme forcing app into dark mode via Scaffold now fixed.
 
 ## Screenshots
 
