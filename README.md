@@ -26,4 +26,4 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
 
-<img src= "images/Sample 1.png" width="180" height="360" >   <img src= "images/Sample 2.png" width="360" height="720" >  <img src= "images/Sample 3.png" width="360" height="720" > 
+<img src= "images/Sample 1.png" width="240" height="480" >   <img src= "images/Sample 2.png" width="360" height="720" >  <img src= "images/Sample 3.png" width="360" height="720" > 
