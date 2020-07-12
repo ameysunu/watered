@@ -13,6 +13,8 @@ class _BillsState extends State<Bills> {
       context,
       title: 'Yes!',
       subTitle: 'You have paid off your bill! Way to go.',
+      textStyleTitle: TextStyle(fontFamily: 'Poppins'),
+      textStyleSubTitle: TextStyle(fontFamily: 'Poppins'),
       icon: Icon(
         Icons.invert_colors,
         color: Colors.white,
@@ -27,6 +29,8 @@ class _BillsState extends State<Bills> {
       context,
       title: 'Noooooo',
       subTitle: 'You haven\'t paid your bill yet.! Do pay please!',
+      textStyleTitle: TextStyle(fontFamily: 'Poppins'),
+      textStyleSubTitle: TextStyle(fontFamily: 'Poppins'),
       icon: Icon(
         Icons.invert_colors_off,
         color: Colors.white,
