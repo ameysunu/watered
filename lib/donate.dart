@@ -156,6 +156,16 @@ class _DonateState extends State<Donate> {
                   ),
                 ),
               ),
+              Center(
+                child: Text(
+                  'PayIt\u00a9 secured payment gateway',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 15,
+                    color: Hexcolor('#800080'),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
