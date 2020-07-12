@@ -57,7 +57,7 @@ class _DonateState extends State<Donate> {
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
                 child: SizedBox(
                   width: double.infinity,
-                  height: 200,
+                  height: 300,
                   child: Column(
                     children: <Widget>[
                       Padding(
@@ -93,9 +93,6 @@ class _DonateState extends State<Donate> {
                               RaisedButton(
                                 onPressed: () {
                                   if (_formKey.currentState.validate()) {
-                                    // If the form is valid, display a snackbar. In the real world,
-                                    // you'd often call a server or save the information in a database.
-
                                     Scaffold.of(context).showSnackBar(SnackBar(
                                         content: Text('Processing Data')));
                                   }
