@@ -83,13 +83,24 @@ class _DonateState extends State<Donate> {
                                       fontFamily: 'Poppins',
                                       color: Colors.white),
                                 ),
-                                validator: (value) {
-                                  // ignore: unrelated_type_equality_checks
-                                  if (value != 20) {
-                                    return 'Please enter some text';
-                                  }
-                                  return null;
+                                validator: (String arg) {
+                                  if (arg.length < 20 || arg.length > 20)
+                                    return 'Invalid number';
+                                  else
+                                    return null;
                                 },
+                              ),
+                              RaisedButton(
+                                onPressed: () {
+                                  if (_formKey.currentState.validate()) {
+                                    // If the form is valid, display a snackbar. In the real world,
+                                    // you'd often call a server or save the information in a database.
+
+                                    Scaffold.of(context).showSnackBar(SnackBar(
+                                        content: Text('Processing Data')));
+                                  }
+                                },
+                                child: Text('Submit'),
                               ),
                             ],
                           ),
