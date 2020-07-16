@@ -18,6 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 ## v0.1
 
 1. New Bill Section added.
+2. Donation implemented within app itself.
 
 ## Bug Fixes
 1. Bottom Navigation Bar switching error fixed.
