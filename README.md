@@ -24,7 +24,6 @@ samples, guidance on mobile development, and a full API reference.
 1. Bottom Navigation Bar switching error fixed.
 2. Share function is now functioning, instead of opening link.
 3. Theme Data function resolved. Phone theme forcing app into dark mode via Scaffold now fixed.
-4.
 
 ## Screenshots
 
