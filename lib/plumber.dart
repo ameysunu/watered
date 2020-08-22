@@ -8,7 +8,7 @@ class PlumberDetails extends StatefulWidget {
 }
 
 class _PlumberDetailsState extends State<PlumberDetails> {
-  final int number = 9566984237;
+  int number;
   void call(int number) => launch("tel:$number");
   @override
   Widget build(BuildContext context) {
@@ -70,7 +70,7 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                             color: Colors.white,
                           ),
                           onPressed: () {
-                            call(number);
+                            call(number = 9566984237);
                           }),
                     ),
                   ),

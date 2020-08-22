@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1003396014379",
+    "firebase_url": "https://watered-e1a9c.firebaseio.com",
+    "project_id": "watered-e1a9c",
+    "storage_bucket": "watered-e1a9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003396014379:android:29b3108c82290ed56de56e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_hack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003396014379-irqaetbcthdojivbqqlvo7skm1tdred8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_hack",
+            "certificate_hash": "71b609f9cc026c1e6fa960aeed32993774cef864"
+          }
+        },
+        {
+          "client_id": "1003396014379-6qm4o51cadhr4tp6jmuqv0in1uqj1ac1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-Xez_mwh8Lk22VlzsEfvp3xO6AE7MLP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003396014379-6qm4o51cadhr4tp6jmuqv0in1uqj1ac1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
