@@ -2,7 +2,7 @@
 
 Monitor all your taps, geysers and sink for water usage and to detect any sorts of leakage. Find the nearest plumber and availabilty to make an appointment to check over your leakages. Also, support water and wildlife.
 <br><br>
-[![Codemagic build status](https://api.codemagic.io/apps/5f2c1e648ff73d001216b454/5f2c1e648ff73d001216b453/status_badge.svg)](https://codemagic.io/apps/5f2c1e648ff73d001216b454/5f2c1e648ff73d001216b453/latest_build)
+[![Codemagic build status](https://api.codemagic.io/apps/5f2c1e648ff73d001216b454/5f2c1e648ff73d001216b453/status_badge.svg)](https://codemagic.io/apps/5f2c1e648ff73d001216b454/5f2c1e648ff73d001216b453/latest_build) [![License](https://img.shields.io/github/license/ameysunu/watered.svg)](https://github.com/ameysunu/watered)
 
 ## Getting Started
 
