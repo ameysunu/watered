@@ -13,13 +13,13 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Hexcolor('#ED4C5C'),
+        backgroundColor: HexColor('#ED4C5C'),
         body: SingleChildScrollView(
           child: SafeArea(
             child: Column(
               children: <Widget>[
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.vertical(
                       top: Radius.zero,
@@ -38,9 +38,10 @@ class Home extends StatelessWidget {
                             child: Text(
                               'Watered',
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 30.0,
-                                  color: Colors.white),
+                                fontFamily: 'Poppins',
+                                fontSize: 30.0,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                           Padding(
@@ -48,9 +49,10 @@ class Home extends StatelessWidget {
                             child: Text(
                               'Water is an important asset.',
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 20.0,
-                                  color: Colors.white),
+                                fontFamily: 'Poppins',
+                                fontSize: 20.0,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                           Padding(
@@ -58,26 +60,38 @@ class Home extends StatelessWidget {
                             child: Text(
                               'Do feel free to report any water problems.',
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 17.0,
-                                  color: Colors.white70),
+                                fontFamily: 'Poppins',
+                                fontSize: 17.0,
+                                color: Colors.white70,
+                              ),
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.fromLTRB(90, 30, 10, 0),
                             child: ButtonBar(
                               children: <Widget>[
-                                RaisedButton(
-                                  color: Hexcolor('#FF864C'),
+                                ElevatedButton(
+                                  style: ButtonStyle(
+                                    backgroundColor:
+                                        MaterialStateProperty.all<Color>(
+                                          HexColor('#FF864C'),
+                                        ),
+                                    shape:
+                                        MaterialStateProperty.all<
+                                          OutlinedBorder
+                                        >(StadiumBorder()),
+                                  ),
                                   onPressed: () {
                                     call(number);
                                   },
-                                  shape: StadiumBorder(),
-                                  child: Text('Call Water Helpline',
-                                      style: TextStyle(
-                                          fontFamily: 'Poppins',
-                                          fontSize: 20,
-                                          color: Colors.white)),
+                                  child: Text(
+                                    'Call Water Helpline',
+                                    style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontSize: 20,
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
@@ -92,46 +106,54 @@ class Home extends StatelessWidget {
                     children: <Widget>[
                       InkWell(
                         child: Card(
-                          color: Hexcolor('#800080'),
+                          color: HexColor('#800080'),
                           margin: EdgeInsets.symmetric(
-                              vertical: 10.0, horizontal: 10.0),
+                            vertical: 10.0,
+                            horizontal: 10.0,
+                          ),
                           child: ListTile(
                             leading: Image.asset('images/plumb.png'),
                             title: Text(
                               'Leaking Taps?',
                               style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 20.0),
+                                color: Colors.white,
+                                fontFamily: 'Poppins',
+                                fontSize: 20.0,
+                              ),
                             ),
                             onTap: () => Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => PlumberDetails()),
+                                builder: (context) => PlumberDetails(),
+                              ),
                             ),
                             subtitle: Text(
                               'Get in touch with a plumber.',
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 15.0),
+                                color: Colors.white70,
+                                fontFamily: 'Poppins',
+                                fontSize: 15.0,
+                              ),
                             ),
                           ),
                         ),
                       ),
                       InkWell(
                         child: Card(
-                          color: Hexcolor('#800080'),
+                          color: HexColor('#800080'),
                           margin: EdgeInsets.symmetric(
-                              vertical: 5.0, horizontal: 10.0),
+                            vertical: 5.0,
+                            horizontal: 10.0,
+                          ),
                           child: ListTile(
                             leading: Image.asset('images/tree.png'),
                             title: Text(
                               'Give back to earth',
                               style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 20.0),
+                                color: Colors.white,
+                                fontFamily: 'Poppins',
+                                fontSize: 20.0,
+                              ),
                             ),
                             onTap: () => Navigator.push(
                               context,
@@ -140,26 +162,30 @@ class Home extends StatelessWidget {
                             subtitle: Text(
                               'Learn how you can save water and trees.',
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 15.0),
+                                color: Colors.white70,
+                                fontFamily: 'Poppins',
+                                fontSize: 15.0,
+                              ),
                             ),
                           ),
                         ),
                       ),
                       InkWell(
                         child: Card(
-                          color: Hexcolor('#800080'),
+                          color: HexColor('#800080'),
                           margin: EdgeInsets.symmetric(
-                              vertical: 10.0, horizontal: 10.0),
+                            vertical: 10.0,
+                            horizontal: 10.0,
+                          ),
                           child: ListTile(
                             leading: Image.asset('images/donate.png'),
                             title: Text(
                               'Donate',
                               style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 20.0),
+                                color: Colors.white,
+                                fontFamily: 'Poppins',
+                                fontSize: 20.0,
+                              ),
                             ),
                             onTap: () => Navigator.push(
                               context,
@@ -168,39 +194,45 @@ class Home extends StatelessWidget {
                             subtitle: Text(
                               'Support water cause by donation.',
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 15.0),
+                                color: Colors.white70,
+                                fontFamily: 'Poppins',
+                                fontSize: 15.0,
+                              ),
                             ),
                           ),
                         ),
                       ),
                       InkWell(
                         child: Card(
-                          color: Hexcolor('#800080'),
+                          color: HexColor('#800080'),
                           margin: EdgeInsets.symmetric(
-                              vertical: 10.0, horizontal: 10.0),
+                            vertical: 10.0,
+                            horizontal: 10.0,
+                          ),
                           child: ListTile(
                             leading: Image.asset('images/developer.png'),
                             title: Text(
                               'About Developer',
                               style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 20.0),
+                                color: Colors.white,
+                                fontFamily: 'Poppins',
+                                fontSize: 20.0,
+                              ),
                             ),
                             onTap: () async {
                               if (await canLaunch(
-                                  "https://github.com/ameysunu/")) {
+                                "https://github.com/ameysunu/",
+                              )) {
                                 await launch("https://github.com/ameysunu");
                               }
                             },
                             subtitle: Text(
                               'Developer details.',
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 15.0),
+                                color: Colors.white70,
+                                fontFamily: 'Poppins',
+                                fontSize: 15.0,
+                              ),
                             ),
                           ),
                         ),

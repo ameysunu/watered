@@ -10,25 +10,21 @@ class Donate extends StatefulWidget {
 class _DonateState extends State<Donate> {
   void _donateTriggered(BuildContext context) {
     AchievementView(
-      context,
       title: 'Wohoo!',
       subTitle: 'Thank you! We will verify your payment soon!',
       textStyleTitle: TextStyle(fontFamily: 'Poppins'),
       textStyleSubTitle: TextStyle(fontFamily: 'Poppins'),
-      icon: Icon(
-        Icons.monetization_on,
-        color: Colors.white,
-      ),
-      borderRadius: 5.0,
-      color: Hexcolor('#800080'),
-    )..show();
+      icon: Icon(Icons.monetization_on, color: Colors.white),
+      borderRadius: BorderRadius.all(Radius.circular(5.0)),
+      color: HexColor('#800080'),
+    )..show(context);
   }
 
   final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Hexcolor('#ED4C5C'),
+      backgroundColor: HexColor('#ED4C5C'),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
@@ -42,9 +38,10 @@ class _DonateState extends State<Donate> {
                       'Donation',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 30.0,
-                          color: Colors.white),
+                        fontFamily: 'Poppins',
+                        fontSize: 30.0,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ],
@@ -55,14 +52,15 @@ class _DonateState extends State<Donate> {
                   child: Text(
                     'Even a single dollar can help you change the world.',
                     style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 15.0,
-                        color: Colors.white),
+                      fontFamily: 'Poppins',
+                      fontSize: 15.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
               Card(
-                color: Hexcolor('#FF864C'),
+                color: HexColor('#FF864C'),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.vertical(
                     top: Radius.circular(25.0),
@@ -80,9 +78,10 @@ class _DonateState extends State<Donate> {
                         child: Text(
                           'You are about to initiate a non-refundable payment. Do fill up the below form.',
                           style: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontSize: 15,
-                              color: Hexcolor('#800080')),
+                            fontFamily: 'Poppins',
+                            fontSize: 15,
+                            color: HexColor('#800080'),
+                          ),
                         ),
                       ),
                       Padding(
@@ -92,21 +91,26 @@ class _DonateState extends State<Donate> {
                           child: Column(
                             children: <Widget>[
                               Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(8.0, 10, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(
+                                  8.0,
+                                  10,
+                                  0,
+                                  0,
+                                ),
                                 child: TextFormField(
                                   decoration: InputDecoration(
                                     labelText: 'Enter your credit/debit number',
                                     labelStyle: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        color: Colors.white),
+                                      fontFamily: 'Poppins',
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                  validator: (String arg) {
-                                    if (arg.length < 20 || arg.length > 20)
-                                      return 'Invalid number';
-                                    else
-                                      return null;
-                                  },
+                                  // validator: (String arg) {
+                                  //   if (arg.length < 20 || arg.length > 20)
+                                  //     return 'Invalid number';
+                                  //   else
+                                  //     return null;
+                                  // },
                                 ),
                               ),
                               Padding(
@@ -115,36 +119,52 @@ class _DonateState extends State<Donate> {
                                   decoration: InputDecoration(
                                     labelText: 'Enter CVC number',
                                     labelStyle: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        color: Colors.white),
+                                      fontFamily: 'Poppins',
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(8.0, 10, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(
+                                  8.0,
+                                  10,
+                                  0,
+                                  0,
+                                ),
                                 child: TextFormField(
                                   decoration: InputDecoration(
                                     labelText: 'Amount (\u0024)',
                                     labelStyle: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        color: Colors.white),
+                                      fontFamily: 'Poppins',
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(100, 30, 100, 0),
-                                child: RaisedButton(
-                                  color: Hexcolor('#ED4C5C'),
+                                padding: const EdgeInsets.fromLTRB(
+                                  100,
+                                  30,
+                                  100,
+                                  0,
+                                ),
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    backgroundColor:
+                                        MaterialStateProperty.all<Color>(
+                                          HexColor('#ED4C5C'),
+                                        ),
+                                  ),
                                   onPressed: () {
                                     _donateTriggered(context);
                                   },
                                   child: Text(
                                     'Donate',
                                     style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        color: Colors.white),
+                                      fontFamily: 'Poppins',
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -162,7 +182,7 @@ class _DonateState extends State<Donate> {
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontSize: 15,
-                    color: Hexcolor('#800080'),
+                    color: HexColor('#800080'),
                   ),
                 ),
               ),

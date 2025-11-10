@@ -13,11 +13,11 @@ class _PlumberDetailsState extends State<PlumberDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Hexcolor('#ED4C5C'),
+      backgroundColor: HexColor('#ED4C5C'),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Card(
-            color: Hexcolor('#800080'),
+            color: HexColor('#800080'),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
                 top: Radius.circular(25.0),
@@ -34,14 +34,15 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     child: Text(
                       'Available Plumbers',
                       style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 30.0,
-                          color: Colors.white),
+                        fontFamily: 'Poppins',
+                        fontSize: 30.0,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   elevation: 0,
                   margin: EdgeInsets.all(5),
                   child: ListTile(
@@ -49,9 +50,10 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     title: Text(
                       'Jeremy ',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 20.0),
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
                     ),
                     onTap: () {
                       call(number);
@@ -59,26 +61,25 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     subtitle: Text(
                       '1.2 miles away, Last seen at 14:10',
                       style: TextStyle(
-                          color: Colors.white70,
-                          fontFamily: 'Poppins',
-                          fontSize: 15.0),
+                        color: Colors.white70,
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                      ),
                     ),
                     trailing: CircleAvatar(
                       radius: 30.0,
-                      backgroundColor: Hexcolor('#ED4C5C'),
+                      backgroundColor: HexColor('#ED4C5C'),
                       child: IconButton(
-                          icon: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            call(number);
-                          }),
+                        icon: Icon(Icons.phone, color: Colors.white),
+                        onPressed: () {
+                          call(number);
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   elevation: 0,
                   margin: EdgeInsets.all(5),
                   child: ListTile(
@@ -86,34 +87,34 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     title: Text(
                       'Allison ',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 20.0),
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
                     ),
                     onTap: null,
                     subtitle: Text(
                       '0.4 miles away, Last seen at 14:35',
                       style: TextStyle(
-                          color: Colors.white70,
-                          fontFamily: 'Poppins',
-                          fontSize: 15.0),
+                        color: Colors.white70,
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                      ),
                     ),
                     trailing: CircleAvatar(
                       radius: 30.0,
-                      backgroundColor: Hexcolor('#FF864C'),
+                      backgroundColor: HexColor('#FF864C'),
                       child: IconButton(
-                          icon: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            call(number);
-                          }),
+                        icon: Icon(Icons.phone, color: Colors.white),
+                        onPressed: () {
+                          call(number);
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   elevation: 0,
                   margin: EdgeInsets.all(5),
                   child: ListTile(
@@ -121,34 +122,34 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     title: Text(
                       'Clyde',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 20.0),
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
                     ),
                     onTap: null,
                     subtitle: Text(
                       '2.3 miles away, now Online',
                       style: TextStyle(
-                          color: Colors.white70,
-                          fontFamily: 'Poppins',
-                          fontSize: 15.0),
+                        color: Colors.white70,
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                      ),
                     ),
                     trailing: CircleAvatar(
                       radius: 30.0,
-                      backgroundColor: Hexcolor('#C21170'),
+                      backgroundColor: HexColor('#C21170'),
                       child: IconButton(
-                          icon: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            call(number);
-                          }),
+                        icon: Icon(Icons.phone, color: Colors.white),
+                        onPressed: () {
+                          call(number);
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   elevation: 0,
                   margin: EdgeInsets.all(5),
                   child: ListTile(
@@ -156,34 +157,34 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     title: Text(
                       'Tim',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 20.0),
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
                     ),
                     onTap: null,
                     subtitle: Text(
                       '4.1 miles away, Last seen yesterday at 22:10',
                       style: TextStyle(
-                          color: Colors.white70,
-                          fontFamily: 'Poppins',
-                          fontSize: 15.0),
+                        color: Colors.white70,
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                      ),
                     ),
                     trailing: CircleAvatar(
                       radius: 30.0,
-                      backgroundColor: Hexcolor('#ED4C5C'),
+                      backgroundColor: HexColor('#ED4C5C'),
                       child: IconButton(
-                          icon: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            call(number);
-                          }),
+                        icon: Icon(Icons.phone, color: Colors.white),
+                        onPressed: () {
+                          call(number);
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   elevation: 0,
                   margin: EdgeInsets.all(5),
                   child: ListTile(
@@ -191,34 +192,34 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     title: Text(
                       'Sandro',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 20.0),
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
                     ),
                     onTap: null,
                     subtitle: Text(
                       '0.3 miles away, Last seen at 11:00',
                       style: TextStyle(
-                          color: Colors.white70,
-                          fontFamily: 'Poppins',
-                          fontSize: 15.0),
+                        color: Colors.white70,
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                      ),
                     ),
                     trailing: CircleAvatar(
                       radius: 30.0,
-                      backgroundColor: Hexcolor('#FF864C'),
+                      backgroundColor: HexColor('#FF864C'),
                       child: IconButton(
-                          icon: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            call(number);
-                          }),
+                        icon: Icon(Icons.phone, color: Colors.white),
+                        onPressed: () {
+                          call(number);
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   elevation: 0,
                   margin: EdgeInsets.all(5),
                   child: ListTile(
@@ -226,34 +227,34 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     title: Text(
                       'Rita',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 20.0),
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
                     ),
                     onTap: null,
                     subtitle: Text(
                       '1.4 miles away, Last seen at 15:10',
                       style: TextStyle(
-                          color: Colors.white70,
-                          fontFamily: 'Poppins',
-                          fontSize: 15.0),
+                        color: Colors.white70,
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                      ),
                     ),
                     trailing: CircleAvatar(
                       radius: 30.0,
-                      backgroundColor: Hexcolor('#C21170'),
+                      backgroundColor: HexColor('#C21170'),
                       child: IconButton(
-                          icon: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            call(number);
-                          }),
+                        icon: Icon(Icons.phone, color: Colors.white),
+                        onPressed: () {
+                          call(number);
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   elevation: 0,
                   margin: EdgeInsets.all(5),
                   child: ListTile(
@@ -261,34 +262,34 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     title: Text(
                       'Carly',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 20.0),
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
                     ),
                     onTap: null,
                     subtitle: Text(
                       '0.9 miles away, now Online',
                       style: TextStyle(
-                          color: Colors.white70,
-                          fontFamily: 'Poppins',
-                          fontSize: 15.0),
+                        color: Colors.white70,
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                      ),
                     ),
                     trailing: CircleAvatar(
                       radius: 30.0,
-                      backgroundColor: Hexcolor('#ED4C5C'),
+                      backgroundColor: HexColor('#ED4C5C'),
                       child: IconButton(
-                          icon: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            call(number);
-                          }),
+                        icon: Icon(Icons.phone, color: Colors.white),
+                        onPressed: () {
+                          call(number);
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Card(
-                  color: Hexcolor('#800080'),
+                  color: HexColor('#800080'),
                   elevation: 0,
                   margin: EdgeInsets.all(5),
                   child: ListTile(
@@ -296,29 +297,29 @@ class _PlumberDetailsState extends State<PlumberDetails> {
                     title: Text(
                       'Ren',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 20.0),
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 20.0,
+                      ),
                     ),
                     onTap: null,
                     subtitle: Text(
                       '1.9 miles away, Last seen at 11:10',
                       style: TextStyle(
-                          color: Colors.white70,
-                          fontFamily: 'Poppins',
-                          fontSize: 15.0),
+                        color: Colors.white70,
+                        fontFamily: 'Poppins',
+                        fontSize: 15.0,
+                      ),
                     ),
                     trailing: CircleAvatar(
                       radius: 30.0,
-                      backgroundColor: Hexcolor('#FF864C'),
+                      backgroundColor: HexColor('#FF864C'),
                       child: IconButton(
-                          icon: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            call(number);
-                          }),
+                        icon: Icon(Icons.phone, color: Colors.white),
+                        onPressed: () {
+                          call(number);
+                        },
+                      ),
                     ),
                   ),
                 ),
